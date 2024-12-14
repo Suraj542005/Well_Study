@@ -1,0 +1,141 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    /* background-color: #B5D5EA; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: #2182b7;
+    height: 60px;
+    position: relative;
+}
+
+.left {
+    height: 90%;
+    /* margin: 5px; */
+}
+
+.right {
+    font-size: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    /* font-size: 2vw; */
+}
+
+.left a img {
+    /* height: 4vw; */
+    height: 100%;
+    border: 2px solid;
+    border-radius: 50px;
+}
+
+
+/* Page-1 */
+/* 
+.pg_1 {
+    height: calc(100% - 80px);
+} */
+
+.outer_box {
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: #000; */
+}
+
+
+.pg_1 h1 {
+    font-size: 5vw;
+    color: #009bd6;
+    /* color: white; */
+    text-align: center;
+}
+
+.table_container {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.table_container h2 {
+    margin: 1vw;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    height: 100%;
+}
+
+th,
+td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.table_container button {
+    background-color: #349E85;
+    color: white;
+    border: 2px solid black;
+    border-radius: 2px;
+    height: 3vw;
+    width: 10vw;
+    font-size: 1.5vw;
+}
+
+.table_container button:hover {
+    background-color: #04833e;
+    /* background-color: #38b45b; */
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 5px;
+    /* align-self: center; */
+    text-align: center;
+    /* line-height: 10px; */
+    /* height: 60px; */
+    /* width: 100%; */
+    background: #2182b7;
+}
+
+.footer p {
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+@media (max-width: 1500px) {
+    nav {
+        height: 40px;
+    }
+
+    .pg_1 h1 {
+        font-size: 10vw;
+    }
+
+    .table_container {
+        font-size: 5vw;
+    }
+
+    .table_container button {
+
+        height: 10vw;
+        width: 20vw;
+        font-size: 3.5vw;
+    }
+}
